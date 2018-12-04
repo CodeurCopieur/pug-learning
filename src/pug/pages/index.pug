@@ -19,10 +19,16 @@ html(lang="en")
         p 
          |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, illum odit modi rem at minus.
          button salut
+         include ../layouts/sidebar
 
         ul
-         each item in ["link 1", "link 2", "link3"]
+         each item in ["link 1", "link 2", "link 3"]
             li: a(href="#{item}.html")= item
+
+        //
+            Une mixins
+        include ../layouts/mixins
+        +btn("Bravo !")(class="test")
 
         
          
