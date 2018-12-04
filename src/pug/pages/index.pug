@@ -1,10 +1,28 @@
 <!DOCTYPE html>
-html(lang="fr")
+html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Document
     body
-        include ../layout/header
-        h1 Hello World !
+        a(href="#", class="test") link 
+
+        nav#header.navbar.navbar-inverse.navbar-fixed-top(class="center")
+            .container
+                .nav-header
+                    a.navbar-brand(href="#") Mon logo
+                #navbar.navbar-collapse
+                    ul
+                        li: a(href="#") Mon premier lien
+        
+        p 
+         |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, illum odit modi rem at minus.
+         button salut
+
+        ul
+         each item in ["link 1", "link 2", "link3"]
+            li: a(href="#{item}.html")= item
+
+        
+         
