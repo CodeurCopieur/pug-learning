@@ -17,7 +17,7 @@ gulp.task('serve', function() {
 
 
 gulp.task('pug', function(){
-    return gulp.src('src/pug/pages/*.pug')
+    return gulp.src('src/pug/*.pug')
         .pipe(gp.pug({
             pretty:true
         }))
